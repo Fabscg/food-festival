@@ -8,11 +8,11 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
     },
-    plugins:[
+    plugins: [
         new webpack.ProvidePlugin({
-            $:'jquery',
-            jQuery:'jquery'
+            $: "jquery",
+            jQuery: "jquery"
         }),
     ],
-    mode:'development'
+    mode: 'development'
 };
