@@ -41,8 +41,8 @@ module.exports = {
     },
     plugins: [
         new webpack.ProvidePlugin({
-            $: "jquery",
-            jQuery: "jquery"
+            $: 'jquery',
+            jQuery: 'jquery'
         }),
         new BundleAnalyzerPlugin({
             analyzerMode: "static", // the report outputs to an HTML file in the dist folder
