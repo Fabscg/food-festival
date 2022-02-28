@@ -5,6 +5,13 @@ const webpack = require('webpack')
 
 
 module.exports = {
+    devServer: {
+        static: {
+            directory: path.join(__dirname, '/'),
+        },
+        compress: true,
+        port: 8080,
+    },
     entry: {
         app: './assets/js/script.js',
         events: "/assets/js/events.js",
@@ -39,6 +46,7 @@ module.exports = {
             }
         ]
     },
+
     plugins: [
         new webpack.ProvidePlugin({
             $: 'jquery',
